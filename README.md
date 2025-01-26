@@ -1,8 +1,10 @@
 
 ##   سیستم احراز هویت کاربر (ثبت نام، لاگین، فراموشی رمز) مبتنی بر دات نت و انگولار
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Motavakel/AngularAuthApi/main/proj.png" width="50%" style="max-width: 100%;"/>
+</p>
 
-<img src="https://raw.githubusercontent.com/Motavakel/AngularAuthApi/main/proj.png" style="width: 50%; max-width: 100%;display: block;margin: auto;"/>
 
 
 <p align="justify">
