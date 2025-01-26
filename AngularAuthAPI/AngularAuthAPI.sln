@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngularAuthAPI", "AngularAuthAPI\AngularAuthAPI.csproj", "{A671D2CF-CAF1-4BD7-BF0C-5551FBA0FF63}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngularAuthDatabase", "AngularAuthDatabase\AngularAuthDatabase.csproj", "{3DC8E196-9260-4D6F-BB90-1A784679A91E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngularAuthInfrastructure", "AngularAuthInfrastructure\AngularAuthInfrastructure.csproj", "{058BA174-2E7F-48E6-9353-56C2504F814A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngularAuthApplication", "AngularAuthApplication\AngularAuthApplication.csproj", "{F13F3667-ACBC-4E7F-96D4-A9D5EA30F6F2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A671D2CF-CAF1-4BD7-BF0C-5551FBA0FF63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A671D2CF-CAF1-4BD7-BF0C-5551FBA0FF63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A671D2CF-CAF1-4BD7-BF0C-5551FBA0FF63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A671D2CF-CAF1-4BD7-BF0C-5551FBA0FF63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DC8E196-9260-4D6F-BB90-1A784679A91E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DC8E196-9260-4D6F-BB90-1A784679A91E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DC8E196-9260-4D6F-BB90-1A784679A91E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DC8E196-9260-4D6F-BB90-1A784679A91E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{058BA174-2E7F-48E6-9353-56C2504F814A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{058BA174-2E7F-48E6-9353-56C2504F814A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{058BA174-2E7F-48E6-9353-56C2504F814A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{058BA174-2E7F-48E6-9353-56C2504F814A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F13F3667-ACBC-4E7F-96D4-A9D5EA30F6F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F13F3667-ACBC-4E7F-96D4-A9D5EA30F6F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F13F3667-ACBC-4E7F-96D4-A9D5EA30F6F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F13F3667-ACBC-4E7F-96D4-A9D5EA30F6F2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

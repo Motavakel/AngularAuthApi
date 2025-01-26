@@ -1,0 +1,25 @@
+<div class="outer">
+  <div class="container">
+    <div class="row">
+      <div class="offset-md-2 col-lg-5 col-md-7 offset-lg-4 offset-md-3 mx-auto">
+        <div class="admin-panel">
+          <h2>پنل ادمین</h2>
+
+          <div class="info-box">
+            <strong>نام و نام خانوادگی:</strong> {{userDetail.firstName+ ' ' + userDetail.lastName}}
+          </div>
+
+          <div class="info-box"><strong>نام کاربری:</strong> {{userDetail.username}}</div>
+
+          <div class="info-box mb-3">
+            <strong>ایمیل:</strong> {{userDetail.email}}
+          </div>
+
+          <button (click)="signOut()" class="btn-logout mt-5">
+            <i class="fa fa-sign-out"></i> خروج
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

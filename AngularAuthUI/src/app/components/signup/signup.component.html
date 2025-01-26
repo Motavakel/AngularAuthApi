@@ -1,0 +1,103 @@
+<div class="outer">
+  <div class="container">
+    <div class="row">
+      <div class="offset-md-2 col-lg-5 col-md-7 offset-lg-4 offset-md-3 mx-auto">
+        <div class="panel border bg-white">
+          <div class="panel-heading">
+            <h3 class="pt-3 font-weight-bold">ثبت نام</h3>
+          </div>
+          <div class="panel-body p-3">
+            <form [formGroup]="signupForm">
+              <div class="form-group pt-3">
+                <div class="input-field"
+                [class.error]="signupForm.controls['firstname'].dirty && signupForm.hasError('required','firstname')">
+                  <span class="fa fa-user p-2"></span>
+                  <input formControlName="firstname" type="text" placeholder="نام">
+                </div>
+              </div>
+              <small
+              class="text-danger"
+              *ngIf=" signupForm.controls['firstname'].dirty && signupForm.hasError('required', 'firstname')">
+              وارد کردن نام الزامی است!
+            </small>
+              <div class="form-group pt-3">
+                <div class="input-field"
+                [class.error]="signupForm.controls['lastname'].dirty && signupForm.hasError('required','lastname')">
+                  <span class="fa fa-user p-2"></span>
+                  <input formControlName="lastname" type="text" placeholder="نام خانوادگی">
+                </div>
+              </div>
+              <small
+              class="text-danger"
+              *ngIf=" signupForm.controls['lastname'].dirty && signupForm.hasError('required', 'lastname')">
+              وارد کردن نام خانوادگی الزامی است!
+             </small>
+              <div class="form-group pt-3">
+                <div class="input-field"
+                [class.error]="signupForm.controls['email'].dirty && signupForm.hasError('required','email')">
+                  <span class="fa fa-user p-2"></span>
+                  <input formControlName="email" type="text" placeholder="ایمیل">
+                </div>
+              </div>
+              <small
+              class="text-danger"
+              *ngIf=" signupForm.controls['email'].dirty && signupForm.hasError('required', 'email')">
+              وارد کردن ایمیل الزامی است!
+             </small>
+              <div class="form-group pt-3">
+                <div class="input-field"
+                [class.error]="signupForm.controls['username'].dirty && signupForm.hasError('required','username')">
+                  <span class="fa fa-user p-2"></span>
+                  <input formControlName="username" type="text" placeholder="نام کاربری">
+                </div>
+              </div>
+              <small
+              class="text-danger"
+              *ngIf=" signupForm.controls['username'].dirty && signupForm.hasError('required', 'username')">
+              وارد کردن نام کاربری الزامی است!
+             </small>
+
+             <hr class="w-75 my-5 mx-auto"/>
+
+              <div class="form-group pt-3">
+                <div class="input-field"
+                [class.error]="signupForm.controls['password'].dirty && signupForm.hasError('required','password')">
+                  <span class="fa fa-lock p-2"></span>
+                  <input formControlName="password" [type]="type" placeholder="رمز ورود">
+                  <span id="eye-fa" (click)="onHideShowPass()" class="fa {{eyeIcon}}"></span>
+                </div>
+              </div>
+              <small class="text-danger"
+              *ngIf="signupForm.controls['password'].dirty && signupForm.hasError('required','password')">
+              وارد کردن رمز ورود الزامی است
+              </small>
+
+
+              <div class="form-group pt-3">
+                <div class="input-field"
+                     [class.error]="signupForm.controls['confirmPassword'].dirty && signupForm.controls['confirmPassword'].invalid">
+                  <span class="fa fa-lock p-2"></span>
+                  <input formControlName="confirmPassword" [type]="type" placeholder="تأیید رمز ورود">
+                </div>
+              </div>
+              <small class="text-danger"
+                     *ngIf="signupForm.controls['confirmPassword'].dirty && signupForm.controls['confirmPassword'].hasError('required')">
+                تأیید رمز ورود الزامی است
+              </small>
+              <small class="text-danger"
+                     *ngIf="signupForm.hasError('passwordMismatch') && signupForm.controls['confirmPassword'].dirty">
+                رمز عبور و تأیید آن مطابقت ندارند
+              </small>
+
+              <button (click)="onSignUp()" type="submit" class="btn btn-primary btn-block mt-4 w-100">ثبت نام</button>
+              <div class="text-center pt-4 extra-option">
+               قبلا ثبت نام کرده اید؟
+                <a id="forget" routerLink="/login" class="font-weight-bold">ورود</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
