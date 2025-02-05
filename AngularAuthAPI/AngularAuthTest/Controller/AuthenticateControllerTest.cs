@@ -31,7 +31,7 @@ public class AuthenticateControllerTest
 
         var requestMock = new AuthenticateUserDto
         {
-            Password = "230265978Mi@",
+            Password = "",
             Username = "milad_mo",
         };
 
