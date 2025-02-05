@@ -91,7 +91,6 @@ public class AuthenticateController : BaseApiController
     }
     #endregion
 
-
     #region Forget Password
     [HttpPost("resetPassword")]
     public async Task<IActionResult> ResetPassword([FromBody] ResetPasswordDto dto)

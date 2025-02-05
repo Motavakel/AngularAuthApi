@@ -1,4 +1,4 @@
-import { FormBuilder, FormControl, FormGroup ,Validators} from '@angular/forms';
+import { FormBuilder, FormGroup ,Validators} from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
 import ValidateForm from '../../helpers/validateform';
 import { AuthService } from '../../services/auth.service';

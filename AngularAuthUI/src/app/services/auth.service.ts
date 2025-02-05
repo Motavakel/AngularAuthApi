@@ -8,13 +8,16 @@ import { ResetPasswordDto } from '../models/reset-password-dto';
 import { jwtDecode } from 'jwt-decode';
 import { ToastrService } from 'ngx-toastr';
 import { Router } from '@angular/router';
-import { Observable, of } from 'rxjs';
+import { BehaviorSubject, Observable, of } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
 })
 export class AuthService {
+
   private apiKey:string = environment.apiBaseUrl;
+  private currentUser = new BehaviorSubject<UserDto | null> (null);
+  currentUser$ = this.currentUser.asObservable();
 
   constructor(
     private request: HttpClient,
@@ -30,7 +33,7 @@ export class AuthService {
   }
 
   signIn(signInObj: UserDto):Observable<any>{
-    return this.request.post<any>(this.apiKey + 'authenticate', signInObj);
+    return this.request.post<any>(this.apiKey + 'authenticate', signInObj).pipe();
   }
 
   storeToken(tokenValue: string) {

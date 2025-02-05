@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngularAuthInfrastructure",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngularAuthApplication", "AngularAuthApplication\AngularAuthApplication.csproj", "{F13F3667-ACBC-4E7F-96D4-A9D5EA30F6F2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngularAuthTest", "AngularAuthTest\AngularAuthTest.csproj", "{2EFE0676-33BF-464F-9B72-3AEFA284D7E8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{F13F3667-ACBC-4E7F-96D4-A9D5EA30F6F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F13F3667-ACBC-4E7F-96D4-A9D5EA30F6F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F13F3667-ACBC-4E7F-96D4-A9D5EA30F6F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2EFE0676-33BF-464F-9B72-3AEFA284D7E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EFE0676-33BF-464F-9B72-3AEFA284D7E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EFE0676-33BF-464F-9B72-3AEFA284D7E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EFE0676-33BF-464F-9B72-3AEFA284D7E8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
