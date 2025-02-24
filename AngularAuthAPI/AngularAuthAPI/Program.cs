@@ -45,13 +45,10 @@ builder.Services.AddCors(options =>
 
 builder.Services.AddAuthentication(x =>
 {
-    //تعیین توکن به عنوان روش پیش فرض احراز هویت
     x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-
-    //اگر کاربر احراز هویت نشده باشد یک خطای مناسب برگردانده شود 
     x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
 })
-//احراز هویت با توکن
+
 .AddJwtBearer(x =>
 {
     x.RequireHttpsMetadata = false;
