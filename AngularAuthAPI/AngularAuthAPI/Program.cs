@@ -42,13 +42,8 @@ builder.Services.AddCors(options =>
 #endregion
 
 #region Authentication Service By JWT
-
-builder.Services.AddAuthentication(x =>
-{
-    x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-    x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-})
-
+var secretKey = builder.Configuration["JwtSettings:SecretKey"];
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 .AddJwtBearer(x =>
 {
     x.RequireHttpsMetadata = false;
@@ -57,7 +52,7 @@ builder.Services.AddAuthentication(x =>
     {
         //بررسی امضای دیجیتال:فعال
         ValidateIssuerSigningKey = true,
-        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("!@#34sdf&*78kjh^rghw%$mnKJLN23a1234567890abcdefghijklmnopqrstuvwxyz")),
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretKey ?? "")),
         ValidateAudience = false,
         ValidateIssuer = false
     };
